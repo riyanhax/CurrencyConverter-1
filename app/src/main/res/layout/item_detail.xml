@@ -1,0 +1,162 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:tools="http://schemas.android.com/tools"
+                  android:id="@+id/item_detail"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  android:textIsSelectable="true"
+                  tools:context="pl.edu.pwr.rubenvg.currencyconverter.MasterDetail.ItemDetailFragment"
+                android:weightSum="2">
+
+    <TextView
+            android:id="@+id/coun"
+            style="@style/TextAppearance.AppCompat.Title.Inverse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="@string/country"
+            android:paddingTop="16dp"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+            android:id="@+id/country"
+            style="@style/TextAppearance.AppCompat.Title.Inverse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_below="@+id/coun"
+            android:layout_weight="1"
+            android:textIsSelectable="true"
+            android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+            android:id="@+id/reg"
+            style="@style/TextAppearance.AppCompat.Title.Inverse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="@string/region"
+            android:layout_below="@+id/country"
+            android:paddingTop="16dp"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+            android:id="@+id/region"
+            style="@style/TextAppearance.AppCompat.Title.Inverse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_weight="1"
+            android:layout_below="@+id/reg"
+            android:textColor="@color/colorPrimaryDark"
+            android:textIsSelectable="true" />
+
+    <TextView
+            android:id="@+id/sub"
+            style="@style/TextAppearance.AppCompat.Title.Inverse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="@string/subUnit"
+            android:layout_below="@+id/region"
+            android:paddingTop="16dp"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+            android:id="@+id/subUnit"
+            style="@style/TextAppearance.AppCompat.Title.Inverse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_weight="1"
+            android:layout_below="@+id/sub"
+            android:textColor="@color/colorPrimaryDark"
+            android:textIsSelectable="true" />
+
+    <TextView
+            android:id="@+id/sym"
+            style="@style/TextAppearance.AppCompat.Title.Inverse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="@string/symbol"
+            android:layout_below="@+id/subUnit"
+            android:paddingTop="16dp"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+            android:id="@+id/symbol"
+            style="@style/TextAppearance.AppCompat.Title.Inverse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_weight="1"
+            android:layout_below="@+id/sym"
+            android:textColor="@color/colorPrimaryDark"
+            android:textIsSelectable="true" />
+
+    <!--<WebView-->
+            <!--android:id="@+id/textContent"-->
+            <!--style="@style/TextAppearance.AppCompat.Title.Inverse"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:paddingTop="16dp"-->
+            <!--android:paddingLeft="16dp"-->
+            <!--android:paddingRight="16dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_below="@+id/symbol"-->
+            <!--android:textColor="@color/colorPrimaryDark"-->
+            <!--android:layout_height="wrap_content" />-->
+
+    <TextView
+            android:id="@+id/description"
+            style="@style/TextAppearance.AppCompat.Subhead.Inverse"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:layout_below="@+id/symbol"
+            android:textColor="@color/colorPrimaryDark"
+            android:textIsSelectable="true"
+            android:layout_height="wrap_content" />
+
+    <TextView
+            android:id="@+id/graph"
+            style="@style/TextAppearance.AppCompat.Title.Inverse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/graph"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@+id/description"/>
+    <ImageView
+            android:id="@+id/grafica"
+            android:paddingTop="5dp"
+            android:layout_weight="1"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/graph"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:layout_width="match_parent"/>
+
+</RelativeLayout>
+
+

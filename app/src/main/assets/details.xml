@@ -1,0 +1,235 @@
+<Currencies>
+<ITEM name="Euro" code="EUR">
+<Country>Eurozone</Country>
+<Region>Europe</Region><Rate>1.0</Rate>
+<Subunit>1 Euro = 100 cents</Subunit>
+<Symbol>€</Symbol>
+<Description>The Eurozone consists of 19 countries: Austria, Belgium, Finland, France, Germany, Greece, Ireland, Italy, Latvia, Lithuania, Luxembourg, the Netherlands, Portugal, Slovenia, Slovakia, Estonia, Spain, Cyprusand Malta. The Euro was introduced in 2002.
+</Description>
+</ITEM>
+<ITEM name="US Dollar" code="USD">
+<Country>United States of America</Country>
+<Region>North America</Region><Rate>1.0</Rate>
+<Subunit>1 Dollar = 100 cents</Subunit>
+<Symbol>$, US$</Symbol>
+<Description>The U.S. dollar is the currency most used in international transactions. Several countries use the
+U.S. dollar as their official currency, and many others allow it to be used in a de facto capacity. It is
+known locally as a buck or greenback.
+</Description>
+</ITEM>
+<ITEM name="Japanese Yen" code="JPY">
+<Country>Japan</Country>
+<Region>Asia</Region><Rate>1.0</Rate>
+<Subunit>1 Yen = 100 sen</Subunit>
+<Symbol>¥</Symbol>
+<Description>In standard Japanese, the yen is pronounced  and literally means "round object". It is widely
+used throughout the world as a reserve currency after the United States dollar, the euro and the pound
+sterling.
+</Description>
+</ITEM>
+<ITEM name="Bulgarian Lev" code="BGN">
+<Country>Bulgaria</Country>
+<Region>Europe</Region><Rate>1.0</Rate>
+<Subunit>1 лв = 100 stotinka</Subunit>
+<Symbol>лв</Symbol>
+<Description>The Lev (лев) is the currency of Bulgaria. It is divided in 100 stotinki (стотинки). In archaic Bulgarian the word lev meant lion. It is pegged to the Euro at a rate of 1 EUR = 1.95583 lev and it is speculated that Bulgaria, as a member of the European Union could adopt the Euro in the future.
+</Description>
+</ITEM>
+<ITEM name="Czech Koruna" code="CZK">
+<Country>Czech Republic</Country>
+<Region>Europe</Region><Rate>1.0</Rate>
+<Subunit>1 Koruna = 100 haler</Subunit>
+<Symbol>Kc</Symbol>
+<Description>The koruna (meaning "crown") has been fully convertible since 1995 and began to float in 1997. The Czech Republic did intend to adopt the euro in 2012 but this has now been delayed to a later date.
+</Description>
+</ITEM>
+<ITEM name="Danish Krone" code="DKK">
+<Country>Denmark</Country>
+<Region>Europe</Region><Rate>1.0</Rate>
+<Subunit>1 Krone = 100 øre</Subunit>
+<Symbol>kr</Symbol>
+<Description>The krone is the currency of Denmark, including the autonomous provinces of Greenland and the Faroe Islands. The plural form is "kroner". It is loosely pegged to the Euro at a rate of 1 EUR = 7.46038 DKK but is allowed to fluctuate slightly. The government is still committed to converting Denmark"s currency to the euro eventually.</Description>
+</ITEM>
+<ITEM name="British Pound Sterling" code="GBP">
+<Country>United Kingdom</Country>
+<Region>Europe</Region><Rate>1.0</Rate>
+<Subunit>1 Pound = 100 pence</Subunit>
+<Symbol>£</Symbol>
+<Description>The pound is the official currency of the United Kingdom of Great Britain and Northern Ireland. The pound sterling is the fourth most-traded currency in the foreign exchange market. It is known locally as a quid.</Description>
+</ITEM>
+<ITEM name="Hungarian Forint" code="HUF">
+<Country>Hungary</Country>
+<Region>Europe</Region><Rate>1.0</Rate>
+<Subunit>1 Ft = 100 fillér</Subunit>
+<Symbol>Ft</Symbol>
+<Description>The Hungarian forint is divided into 100 fillér, although fillér coins have not been in circulation since 1999. In 2004 Hungary joined the European Union. The forint is expected to disappear in the future, however this will depend on the economic situation closer to the time.</Description>
+</ITEM>
+<ITEM name="Polish Zloty" code="PLN">
+<Country>Poland</Country>
+<Region>Europe</Region><Rate>1.0</Rate>
+<Subunit>1 Zloty = 100 groszy</Subunit>
+<Symbol>zl</Symbol>
+<Description>The new Polish zloty (meaning "golden" ) was introduced on January 1, 1995 as a result of the redenomination of the old currency. The Polish government stated that it would like to join the euro but there is currently no schedule for when this transition will take place.</Description>
+</ITEM>
+<ITEM name="Romanian Leu" code="RON">
+<Country>Romania</Country>
+<Region>Europe</Region><Rate>1.0</Rate>
+<Subunit>1 LEU = 100 bani</Subunit>
+<Symbol>LEU</Symbol>
+<Description>In 2005, Romania underwent a currency reform, switching from the previous leu (ROL) to a new leu (RON). 1 RON is equal to 10,000 ROL. Romania joined the European Union on 1 January 2007 and it is expected to adopt the euro in the future.</Description>
+</ITEM>
+<ITEM name="Swedish Krona" code="SEK">
+<Country>Sweden</Country>
+<Region>Europe</Region><Rate>1.0</Rate>
+<Subunit>1 Krona = 100 ore</Subunit>
+<Symbol>kr</Symbol>
+<Description>The krona has been the currency of Sweden since 1873. The plural form is kronor and the currency is sometimes informally referred to as the "Swedish crown" in English. The Swedish krona also circulates in Aland alongside the official currency, the Euro.</Description>
+</ITEM>
+<ITEM name="Swiss Franc" code="CHF">
+<Country>Switzerland</Country>
+<Region>Europe</Region><Rate>1.0</Rate>
+<Subunit>1 Franc = 100 rappen</Subunit>
+<Symbol>Fr</Symbol>
+<Description>The franc is the currency of both Switzerland and Liechtenstein. Its name in the four official languages of Switzerland is Franken (German), franc (French and Rhaeto-Romanic), and franco (Italian).</Description>
+</ITEM>
+<ITEM name="Norwegian Krone" code="NOK">
+<Country>Norway</Country>
+<Region>Europe</Region><Rate>1.0</Rate>
+<Subunit>1 Krone = 100 ore</Subunit>
+<Symbol>kr</Symbol>
+<Description>The krone was introduced in 1875, when Norway joined the Scandinavian Monetary Union. The coins and banknotes are distributed by the Central Bank of Norway.</Description>
+</ITEM>
+<ITEM name="Croatian Kuna" code="HRK">
+<Country>Croatia</Country>
+<Region>Europe</Region><Rate>1.0</Rate>
+<Subunit>1 kn = 100 lipa</Subunit>
+<Symbol>kn</Symbol>
+<Description>The kuna is the currency of Croatia since 1994 and it is subdivided into 100 lipa. The kuna is issued by the Croatian National Bank and the coins are minted by the Croatian Monetary Institute. The Kuna is expected to be replaced by the euro within two or three years after joining the European Union.</Description>
+</ITEM>
+<ITEM name="Russian Rouble" code="RUB">
+<Country>Russia</Country>
+<Region>Europe</Region><Rate>1.0</Rate>
+<Subunit>1 Rouble = 100 kopek</Subunit>
+<Symbol>руб</Symbol>
+<Description>The ruble or rouble is the currency of the Russian Federation and the two self-proclaimed republics of Abkhazia and South Ossetia. Formerly, the ruble was also the currency of the Soviet Union and the Russian Empire prior to their breakups. Currently there is no official symbol for the ruble.</Description>
+</ITEM>
+<ITEM name="Turkish Lira" code="TRY">
+<Country>Turkey</Country>
+<Region>Europe</Region><Rate>1.0</Rate>
+<Subunit>1 Lira = 100 kurus</Subunit>
+<Symbol>₺</Symbol>
+<Description>In 2003, Turkey passed a law that allowed for the removal of six zeroes from the currency, and the creation of the new lira. It was introduced in 2005, replacing the previous lira. The word "new" was removed on January 1, 2009.</Description>
+</ITEM>
+<ITEM name="Australian Dollar" code="AUD">
+<Country>Australia</Country>
+<Region>Oceania</Region><Rate>1.0</Rate>
+<Subunit>1 Dollar = 100 cents</Subunit>
+<Symbol>A$</Symbol>
+<Description>The Australian Dollar is currently the fifth-most-traded currency in world foreign exchange markets. It is also used in the Christmas Island, Cocos (Keeling) Islands, and Norfolk Island, as well as the independent Pacific Island states of Kiribati, Nauru and Tuvalu.</Description>
+</ITEM>
+<ITEM name="Brazilian Real" code="BRL">
+<Country>Brazil</Country>
+<Region>South America</Region><Rate>1.0</Rate>
+<Subunit>1 Real = 100 centavo</Subunit>
+<Symbol>R$</Symbol>
+<Description>The real, meaning "royal, was first introduced by Portugese settlers and became Brazil"s official currency in 1690. It was not sub-divided in smaller units. The modern real (plural reais) was introduced on July 1, 1994.</Description>
+</ITEM>
+<ITEM name="Canadian Dollar" code="CAD">
+<Country>Canada</Country>
+<Region>North America</Region><Rate>1.0</Rate>
+<Subunit>1 Dollar = 100 cents</Subunit>
+<Symbol>C$</Symbol>
+<Description>The dollar has been the currency of Canada since 1858. A number of central banks keep Canadian dollars as a reserve currency. It is known locally as a buck or a loonie, with the two-dollar coin known as a toonie.</Description>
+</ITEM>
+<ITEM name="Chinese Yuan" code="CNY">
+<Country>China</Country>
+<Region>Asia</Region><Rate>1.0</Rate>
+<Subunit>1 Yuan = 10 jiao or 100 fen</Subunit>
+<Symbol>¥</Symbol>
+<Description>A variety of currencies circulated in China during the Republic of China era, most of which were denominated in the unit "yuan". In 1948 the People"s Bank of China issued a unified currency known as the Renminbi or "people"s currency". Yuan in Chinese literally means a "round object" or "round coin".</Description>
+</ITEM>
+<ITEM name="Hong Kong Dollar" code="HKD">
+<Country>Hong Kong</Country>
+<Region>Asia</Region><Rate>1.0</Rate>
+<Subunit>1 Dollar = 100 cents</Subunit>
+<Symbol>HK$</Symbol>
+<Description>Hong Kong was a dependent territory of the United Kingdom from 1842 until the transfer of its sovereignty to the People"s Republic of China in 1997. Even so, Hong Kong maintains its own monetary system.</Description>
+</ITEM>
+<ITEM name="Indonesian Rupiah" code="IDR">
+<Country>Indonesia</Country>
+<Region>Asia</Region><Rate>1.0</Rate>
+<Subunit>1 Rp = 100 sen</Subunit>
+<Symbol>Rp</Symbol>
+<Description>The rupiah (Rp) is the official currency of Indonesia and is subdivided into 100 sen. The name derives from the Indian monetary unit rupee which is called as rupiya in Indian languages. Informally, Indonesians also use the word "perak" in referring to rupiah. Inflation has now rendered all coins and banknotes denominated in sen obsolete.</Description>
+</ITEM>
+<ITEM name="Israeli Sheqel" code="ILS">
+<Country>Israel</Country>
+<Region>Middle East</Region><Rate>1.0</Rate>
+<Subunit>1 Sheqel = 100 agora</Subunit>
+<Symbol>₪</Symbol>
+<Description>The sheqel has been a freely convertible currency since January 1, 2003. The currency is not produced in Israel, as the country has no mint. Instead banknotes are imported by air and coins by sea.</Description>
+</ITEM>
+<ITEM name="Indian Rupee" code="INR">
+<Country>India</Country>
+<Region>Asia</Region><Rate>1.0</Rate>
+<Subunit>1 ₹ = 100 paise</Subunit>
+<Symbol>₹</Symbol>
+<Description>In different parts of India, the currency is known as the rupee, roopayi, rupaye, rubai or one of the other terms derived from the Sanskrit rupyakam. The most commonly used symbols for the rupee are ₹, Rs and Rp.</Description>
+</ITEM>
+<ITEM name="South Korean Won" code="KRW">
+<Country>South Korea</Country>
+<Region>Asia</Region><Rate>1.0</Rate>
+<Subunit>1 Won = 100 jeon</Subunit>
+<Symbol>₩</Symbol>
+<Description>The won was first used as Korea"s currency between 1902 and 1910. In 1945 Korea became divided, resulting in separate currencies, both called won, for the South and the North.</Description>
+</ITEM>
+<ITEM name="Mexican Peso" code="MXN">
+<Country>Mexico</Country>
+<Region>North America</Region><Rate>1.0</Rate>
+<Subunit>1 Peso = 100 centavo</Subunit>
+<Symbol>$ or MEX$</Symbol>
+<Description>The peso was initially the name of the eight-real coins issued in Mexico by Spain. The Mexican peso is now among the 15 most traded currency units in the world, and is the most traded currency in Latin America.</Description>
+</ITEM>
+<ITEM name="Malaysian Ringgit" code="MYR">
+<Country>Malaysia</Country>
+<Region>Asia</Region><Rate>1.0</Rate>
+<Subunit>1 Ringgit = 100 sen</Subunit>
+<Symbol>RM</Symbol>
+<Description>The Malaysian ringgit is the currency of Malaysia. It is divided into 100 sen.The word ringgit means "jagged" in Malay and was originally used to refer to the serrated edges of silver Spanish dollars which circulated widely in the area during the Portuguese colonial era.</Description>
+</ITEM>
+<ITEM name="New Zealand Dollar" code="NZD">
+<Country>New Zealand</Country>
+<Region>Oceania</Region><Rate>1.0</Rate>
+<Subunit>1 Dollar = 100 cents</Subunit>
+<Symbol>NZ$</Symbol>
+<Description>The New Zealand dollar also circulates in the Cook Islands, Niue, Tokelau, and the Pitcairn Islands. It is often informally known as the "Kiwi (dollar)" and is divided into 100 cents.</Description>
+</ITEM>
+<ITEM name="Philippine Peso" code="PHP">
+<Country>Philippines</Country>
+<Region>Asia</Region><Rate>1.0</Rate>
+<Subunit>1 ₱ = 100 centavos</Subunit>
+<Symbol>₱</Symbol>
+<Description>The Philippine peso derived from the Spanish silver coin Real de a Ocho or Spanish dollar, in wide circulation in the Americas and South-East Asia during the 17th and 18th centuries. The Philippine peso was introduced on May 1, 1852.</Description>
+</ITEM>
+<ITEM name="Singapore Dollar" code="SGD">
+<Country>Singapore</Country>
+<Region>Asia</Region><Rate>1.0</Rate>
+<Subunit>1 Dollar = 100 cents</Subunit>
+<Symbol>S$</Symbol>
+<Description>Two years after Singapore"s independence from Malaysia in 1965, the monetary union between Malaysia, Singapore and Brunei broke down. Singapore issued its first independent coins and notes in 1967. Interchangeability with the Brunei dollar is still maintained.</Description>
+</ITEM>
+<ITEM name="Thai Baht" code="THB">
+<Country>Thailand</Country>
+<Region>Asia</Region><Rate>1.0</Rate>
+<Subunit>1 Baht = 100 satang</Subunit>
+<Symbol>฿</Symbol>
+<Description>A baht is also a unit of weight for gold and is commonly used in jewellers and goldsmiths in Thailand. The currency was originally known as the tical and this name was used in the English language text on banknotes until 1925.</Description>
+</ITEM>
+<ITEM name="South African Rand" code="ZAR">
+<Country>South Africa</Country>
+<Region>Africa</Region><Rate>1.0</Rate>
+<Subunit>1 Rand = 100 cents</Subunit>
+<Symbol>R</Symbol>
+<Description>The rand was introduced in 1961 and takes its name from the Witwatersrand, the ridge upon which Johannesburg is built and where most of South Africa"s gold deposits were found. The Rand circulates freely in Namibia, Swaziland and Lesotho.</Description>
+</ITEM>
+</Currencies>

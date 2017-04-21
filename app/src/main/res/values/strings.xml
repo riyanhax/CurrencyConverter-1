@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Currency converter</string>
+    <string name="title_item_detail">Detail</string>
+    <string name="desciption"><u>Description:</u></string>
+    <string name="symbol"><u>Symbol:</u></string>
+    <string name="country"><u>Country:</u></string>
+    <string name="region"><u>Region:</u></string>
+    <string name="subUnit"><u>Sub-Unit:</u></string>
+    <string name="graph"><u>Exchange Rate History</u> (Base EUR)</string>
+    <string-array name="planets_array">// name of the string array
+        <item>Mercury</item>
+        // items
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
