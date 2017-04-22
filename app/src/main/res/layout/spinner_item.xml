@@ -17,7 +17,6 @@
     android:layout_height="wrap_content"
     android:layout_gravity="center"
     android:paddingLeft="5dp"
-    android:id="@+id/txt1"
-    android:text="test" />
+    android:id="@+id/txt1"/>
 
 </LinearLayout>

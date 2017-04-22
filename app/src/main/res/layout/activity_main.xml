@@ -1,51 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="pl.edu.pwr.rubenvg.currencyconverter.MainActivity"
-    android:orientation="vertical">
-
+    >
 
     <TextView
         android:id="@+id/conversionDisplay"
         android:layout_width="match_parent"
         android:text="INSERT AMOUNT"
+        android:layout_alignParentTop="true"
         android:layout_height="wrap_content" />
 
     <EditText
         android:id="@+id/currencyInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
+        android:layout_below="@+id/conversionDisplay"
+        android:maxLength="10"
         android:inputType="numberDecimal">
         <requestFocus />
     </EditText>
 
-    <Spinner
-        android:id="@+id/spinner1"
-        android:spinnerMode="dialog"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linear"
+        android:layout_below="@+id/currencyInput"
+        android:gravity="center_horizontal">
 
-    <ImageButton
-        android:id="@+id/exgangeImBtn"
-        android:scaleType="fitXY"
-        android:background="@null"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:src="@drawable/excharrow" />
+        <Spinner
+            android:id="@+id/spinner1"
+            android:spinnerMode="dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
-    <Spinner
-        android:id="@+id/spinner2"
-        android:spinnerMode="dialog"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
 
+        <ImageButton
+            android:id="@+id/exgangeImBtn"
+            android:scaleType="fitXY"
+            android:background="@null"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/excharrow" />
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dialog" />
+
+    </LinearLayout>
 
     <ImageButton
         android:id="@+id/zoomImBtn"
+        android:layout_below="@+id/linear"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:scaleType="fitXY"
@@ -55,27 +67,42 @@
         android:id="@+id/graphImVw"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/zoomImBtn"
         android:src="@android:drawable/ic_menu_report_image" />
 
-    <TextView
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linear2"
+        android:layout_above="@+id/btnList"
+        android:gravity="center_horizontal"
+        android:weightSum="2">
+
+        <TextView
         android:id="@+id/lastUpdateTv"
+            android:paddingLeft="5dp"
+            android:layout_weight="1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+ />
 
-    <Button
+        <Button
         android:id="@+id/btnRefresh"
-        android:layout_width="match_parent"
+            android:layout_weight="1"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Refresh" />
 
+
+    </LinearLayout>
+
     <Button
         android:id="@+id/btnList"
+        android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Currency List" />
 
-</LinearLayout>
+</RelativeLayout>
