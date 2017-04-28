@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,12 +9,17 @@
     <TextView
         android:id="@+id/conversionDisplay"
         android:layout_width="match_parent"
-        android:text="INSERT AMOUNT"
+        android:paddingTop="20dp"
+        android:textSize="30dp"
+        android:textAlignment="center"
         android:layout_alignParentTop="true"
         android:layout_height="wrap_content" />
 
     <EditText
+        android:paddingTop="20dp"
+        android:hint="Insert amount"
         android:id="@+id/currencyInput"
+        android:textAlignment="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/conversionDisplay"
@@ -28,6 +32,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:paddingTop="20dp"
         android:id="@+id/linear"
         android:layout_below="@+id/currencyInput"
         android:gravity="center_horizontal">
@@ -57,9 +62,11 @@
 
     <ImageButton
         android:id="@+id/zoomImBtn"
+        android:background="@null"
+        android:layout_alignParentRight="true"
         android:layout_below="@+id/linear"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         android:scaleType="fitXY"
         android:src="@android:drawable/ic_menu_zoom" />
 
@@ -76,30 +83,36 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:id="@+id/linear2"
+        android:paddingBottom="5dp"
         android:layout_above="@+id/btnList"
         android:gravity="center_horizontal"
         android:weightSum="2">
 
         <TextView
         android:id="@+id/lastUpdateTv"
+            android:layout_gravity="center_vertical"
             android:paddingLeft="5dp"
             android:layout_weight="1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
  />
 
-        <Button
-        android:id="@+id/btnRefresh"
-            android:layout_weight="1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Refresh" />
+    <ImageButton
+        android:id="@+id/ImgBtnRefresh"
+        android:src="@drawable/refresh"
+        android:background="@null"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:scaleType="fitCenter"/>
 
 
     </LinearLayout>
 
     <Button
         android:id="@+id/btnList"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/white"
         android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -52,7 +52,7 @@ public class MainActivity extends Activity {
     private ImageView graphView;
     private DBAdapter db;
     private Cursor c;
-    private Button btnRefresh;
+    private ImageButton imgBtnRefresh;
     private Button btnCurrList;
     private ImageButton imBtnzoom;
     private ImageButton imBtnexchangeSpinners;
@@ -63,6 +63,8 @@ public class MainActivity extends Activity {
     private String currencyCode2;
     private SharedPreferences prefs;
     private ArrayList<Currency> arrayListCurrency;
+    private int currencySelected1;
+    private int currencySelected2;
 
 
     @Override
@@ -76,7 +78,7 @@ public class MainActivity extends Activity {
         spin2 = (Spinner) findViewById(R.id.spinner2);
         imBtnexchangeSpinners = (ImageButton) findViewById(R.id.exgangeImBtn);
         currencyDisplay = (TextView) findViewById(R.id.lastUpdateTv);
-        btnRefresh = (Button) findViewById(R.id.btnRefresh);
+        imgBtnRefresh = (ImageButton) findViewById(R.id.ImgBtnRefresh);
         currInput = (EditText) findViewById(R.id.currencyInput);
         currencyDisplay = (TextView) findViewById(R.id.conversionDisplay);
         graphView = (ImageView) findViewById(R.id.graphImVw);
@@ -86,8 +88,9 @@ public class MainActivity extends Activity {
 
         prefs = getSharedPreferences("myPreferences", Context.MODE_PRIVATE);
         String lastUp = prefs.getString("lastUpdate", "IMPORTANT! Update the currency rates");
+        currencySelected1 = prefs.getInt("currencySelected1", 0);
+        currencySelected2 = prefs.getInt("currencySelected2", 0);
         lastUpdate.setText(lastUp);
-
         //Check if the database exist, if not, call method copyDB
         try {
             String destPath = "/data/data/" + getPackageName()
@@ -113,6 +116,7 @@ public class MainActivity extends Activity {
                 currConversion[0] = Double.parseDouble(c.getString(0));
                 currencyDisplay.setText(convert(currInput.getText().toString()));
                 db.close();
+                prefs.edit().putInt("currencySelected1", position).commit();
                 showImage();
             }
 
@@ -130,6 +134,7 @@ public class MainActivity extends Activity {
                 currConversion[1] = Double.parseDouble(c.getString(0));
                 currencyDisplay.setText(convert(currInput.getText().toString()));
                 db.close();
+                prefs.edit().putInt("currencySelected2", position).commit();
                 showImage();
             }
 
@@ -154,7 +159,7 @@ public class MainActivity extends Activity {
 
         });
 
-        btnRefresh.setOnClickListener(new View.OnClickListener() {
+        imgBtnRefresh.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 task = new LoadXml();
@@ -187,10 +192,12 @@ public class MainActivity extends Activity {
         //It has no sense to show the plot if both currencies are the same (Plot is a line)
         if(!currencyCode1.equals(currencyCode2)) {
             graphView.setVisibility(View.VISIBLE);
+            imBtnzoom.setVisibility(View.VISIBLE);
             Glide.with(this).load("http://themoneyconverter.com/exchange-rate-chart/" + currencyCode1 + "/" + currencyCode1 + "-" + currencyCode2 + ".gif")
                     .into(graphView);
             return;
         }
+        imBtnzoom.setVisibility(View.INVISIBLE);
         graphView.setVisibility(View.INVISIBLE);
     }
 
@@ -201,7 +208,7 @@ public class MainActivity extends Activity {
     protected void onResume() {
         super.onResume();
         if (prefs.getBoolean("firstrun", true)) {
-            btnRefresh.performClick();
+            imgBtnRefresh.performClick();
             prefs.edit().putBoolean("firstrun", false).commit();
         }
 
@@ -226,11 +233,12 @@ public class MainActivity extends Activity {
 
     private String convert(String valueToConvert) {
         if (valueToConvert.equals("") || valueToConvert.equals(".")) {
-            return "INSERT AMOUNT";
+            return "";
         } else {
             Double result = Double.parseDouble(valueToConvert) * currConversion[1];
             DecimalFormat df=new DecimalFormat("#.###");
-            return df.format(result/currConversion[0]);
+            result = result/currConversion[0];
+            return df.format(result)+" "+currencyCode2;
 
         }
     }
@@ -268,6 +276,8 @@ public class MainActivity extends Activity {
         SpinnerAdapter adapter = new SpinnerAdapter(this, R.layout.spinner_item,R.id.txt1,arrayListCurrency);
         spin1.setAdapter(adapter);
         spin2.setAdapter(adapter);
+        spin1.setSelection(currencySelected1);
+        spin2.setSelection(currencySelected2);
     }
 
     public class LoadXml extends AsyncTask<String, Integer, Boolean> {

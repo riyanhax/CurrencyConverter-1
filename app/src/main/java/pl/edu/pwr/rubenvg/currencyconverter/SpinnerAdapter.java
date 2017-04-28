@@ -1,6 +1,5 @@
 package pl.edu.pwr.rubenvg.currencyconverter;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
